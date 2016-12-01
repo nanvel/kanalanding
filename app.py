@@ -17,7 +17,6 @@ SMTP_HOST = os.getenv('SMTP_HOST', 'localhost')
 SMTP_PORT = os.getenv('SMTP_POST', 1025)
 APP_EMAIL = os.getenv('APP_EMAIL')
 
-print(RECAPTCHA_SECRET_KEY)
 
 EMAIL_REGEXP = re.compile(r"[^@]+@[^@]+\.[^@]+")
 
@@ -81,6 +80,6 @@ loop.run_until_complete(app.smtp.connect())
 
 # for dev only
 app.router.add_get('/', index, name='index')
-app.router.add_static('/static', './static', name='static')
+app.router.add_static('/', './static', name='static')
 
 app.router.add_post('/api/feedback', feedback, name='feedback')
