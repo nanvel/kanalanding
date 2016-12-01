@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css">
+	<link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+	<title>Learn Japanese kana</title>
+	<script type="text/javascript">
+		var RECATCHA_LOADED = false
+		var RECAPTCHA_SITE_KEY = "6Ldrhg0UAAAAAIq9qLRuEFJQeN0vRicIa3385jCF"
+  		var onRecaptchaLoad = function() {
+			RECATCHA_LOADED = true
+  		}
+	</script>
+	<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
+</head>
+<style>
+	body {
+		padding: 20pt;
+	}
+	.screenshot {
+		text-align: center;
+	}
+	.screenshot img {
+		width: 200pt;
+	}
+	h2 {
+		margin-top: 30pt;
+	}
+	a {
+		color: rgb(61, 146, 201);
+	}
+	li {
+		line-height: 150%;
+	}
+	.feedback-form {
+		margin-top: 20pt;
+	}
+	.status {
+		display: inline-block;
+		margin-left: 20pt;
+	}
+	@media screen and (min-width: 48em) {
+		.screenshot img {
+			width: 250pt;
+		}
+	}
+</style>
+<body>
+
+<div class="pure-g">
+	<div class="pure-u-1">
+		<h1>Japanese kana: learn hiragana and katakana with mnemonics and flash cards game</h1>
+	</div>
+</div>
+
+<div class="pure-g">
+
+	<div class="pure-u-1 pure-u-md-3-5">
+		<ul>
+			<li>Learn hiragana and katakana using flash cards game (<a href="https://en.wikipedia.org/wiki/Spaced_repetition" target="_blank">spaced repetition technique</a>)</li>
+			<li>Mnemonics, strokes and tips are included</li>
+			<li>Learn some japanese words written in kana</li>
+			<li>It works offline</li>
+			<li>It is light (installation package is about 2MB)</li>
+		</ul>
+
+		<h2>Download</h2>
+		<div class="pure-g">
+			<div class="pure-u-1-2">
+				<h3>iPhone app</h3>
+				<img src="/static/appstore.png" height="40pt" class="appstore" />
+				<p>Under review ...</p>
+			</div>
+			<div class="pure-u-1-2">
+				<h3>Web version</h3>
+				<ul>
+					<li><a href="https://nanvel.github.io/kanalearn/" target="_blank">Flash cards</a></li>
+					<li><a href="http://nanvel.name/pages/languages/japanese/hiragana-mnemonics" target="_blank">Hiragana mnemonics</a></li>
+					<li><a href="http://nanvel.name/pages/languages/japanese/katakana-mnemonics">Katakana mnemonics</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<h2>Social</h2>
+
+		Facebook G+
+
+		<h2>Feedback / Report a bug</h2>
+
+		<div class="email">
+			<a href="mailto:feedback@kana.nanvel.com?Subject=Kana%20feedback" target="_top" />feedback@kana.nanvel.com</a> or use this form:
+		</div>
+
+		<form class="pure-form pure-form-aligned feedback-form" action="/api/feedback" method="POST" id="feedback-form">
+    		<fieldset>
+        		<div class="pure-control-group">
+            		<label for="name">Name</label>
+            		<input id="name" type="text" placeholder="Name" required>
+        		</div>
+        		<div class="pure-control-group">
+            		<label for="email">Email</label>
+            		<input id="email" type="email" placeholder="Email (optional)">
+        		</div>
+
+        		<div class="pure-control-group">
+            		<label for="message">Message</label>
+            		<textarea id="message" class="pure-input-1-2" placeholder="Message" required></textarea>
+        		</div>
+
+				<div class="pure-control-group" id="recaptcha-container"></div>
+
+        		<button type="submit" class="pure-button pure-button-primary" id="submit-button">Send</button> <div id="status" class="status"></div>
+    		</fieldset>
+		</form>
+
+	</div>
+
+	<div class="pure-u-1 pure-u-md-2-5">
+
+		<div class="screenshot">
+			<img src="/static/kana_main.png" />
+		</div>
+
+		<div class="screenshot">
+			<img src="/static/kana_learn.png" />
+		</div>
+
+		<div class="screenshot">
+			<img src="/static/kana_details.png" />
+		</div>
+
+	</div>
+
+</div>
+
+<div class="copy">
+	&copy;  2016-<span class="year"></span>, Oleksandr Polieno
+</div>
+
+<script type="text/javascript" src="/static/app.min.js"></script>
+
+</body>
+</html>
