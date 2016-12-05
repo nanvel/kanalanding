@@ -2,8 +2,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/pure-min.css">
-	<link rel="stylesheet" href="https://yui-s.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+	<meta name="robots" content="noodp, noydir">
+	<meta name="keywords" content="how to remember katakana,best way to learn katakana,best way to learn hiragana,how to learn katakana,how to remember hiragana,how to learn hiragana,katakana cards,katakana mnemonics,hiragana mnemonics,learn kana,katakana learn,hiragana iphone app,hiragana,katakana,japanese kana,катакана">
+	<meta name="description" content="Japanese kana: learn hiragana and katakana with mnemonics and flash cards game">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/base-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/forms-min.css">
+	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/buttons-min.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
@@ -21,127 +25,238 @@
 </head>
 <style>
 	body {
-		padding: 20pt;
+		background-color: #EAF0B8;
+		line-height: 140%;
+		text-align: justify;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	}
+	h1, h2 {
+		line-height: 120%;
+	}
+	.app-container {
+		background-color: #D8E7A6;
+		padding: 2em;
+		text-align: left;
+	}
+	.app-container h2 {
+		text-align: center;
+	}
+	.appstore {
+		margin: 2em auto;
+	}
+	.feedback-container {
+		padding: 2em;
+		background-color: #D8E7A6;
+		margin-top: 4em;
+	}
+	.header {
+		padding: 2em 1em 0 1em;
+		line-height: 220%;
+	}
+	.subheader {
+		display: block;
+		font-size: 60%;
+		font-weight: normal;
+		line-height: 120%;
+		margin-top: 0.5em;
+	}
+	.article {
+		max-width: 40em;
+		margin: 2em auto 0 auto;
+		padding: 1em;
+	}
+	nav {
+		max-width: 40em;
+		margin: 4em auto 0 auto;
+		padding: 1em;
+	}
+	footer {
+		margin-top: 2em;
+		padding: 1em 2em;
 	}
 	.screenshot {
 		text-align: center;
 	}
 	.screenshot img {
-		width: 200pt;
+		width: 100%;
 	}
-	h2 {
-		margin-top: 30pt;
+	.download ul {
+		margin-top: 2em;
 	}
-	a {
-		color: rgb(61, 146, 201);
+	.download img.app-store {
+		height: 4em;
+		display: inline-block;
 	}
-	li {
-		line-height: 150%;
-	}
-	.feedback-form {
-		margin-top: 20pt;
+	.download img.app-icon {
+		height: 3.9em;
+		display: inline-block;
+		border-radius: 0.5em;
+		background-color: #fff;
+		position: absolute;
+		right: 2em;
 	}
 	.status {
 		display: inline-block;
 		margin-left: 20pt;
 	}
+	a {
+		color: #7D849E;
+	}
 	@media screen and (min-width: 48em) {
-		.screenshot img {
-			width: 250pt;
+		.app-container {
+			width: 20em;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+		.main-container {
+			margin-right: 25em;
+		}
+		.header {
+			padding: 2em 2em 0 2em;
+			line-height: 220%;
 		}
 	}
 </style>
 <body>
 
-<div class="pure-g">
-	<div class="pure-u-1">
-		<h1>Japanese kana: learn hiragana and katakana with mnemonics and flash cards game</h1>
-	</div>
-</div>
+<div class="main-container">
+	<div class="header"><h1>Japanese kana <span class="subheader">learn hiragana and katakana with mnemonics and flash cards game</span></h1></div>
 
-<div class="pure-g">
-
-	<div class="pure-u-1 pure-u-md-3-5">
+	<nav>
+		<p>Navigation</p>
 		<ul>
-			<li>Learn hiragana and katakana using flash cards game (<a href="https://en.wikipedia.org/wiki/Spaced_repetition" target="_blank">spaced repetition technique</a>)</li>
-			<li>Mnemonics, strokes and tips are included</li>
-			<li>Learn some japanese words written in kana</li>
-			<li>It works offline</li>
-			<li>It is light (installation package is about 2MB)</li>
+			<li><a href="#id-remember">Remember Kana is Fast and Easy</a></li>
+			<li><a href="#id-mnemonics">Mnemonics and other tips</a></li>
+			<li><a href="#id-consolidate">Consolidate your knowledge</a></li>
+			<li><a href="#id-app">Japanese kana iOS app</a></li>
+			<li><a href="#id-form">Feedback form</a></li>
+		</ul>
+	</nav>
+
+	<div class="article">
+		<p>If you want to study Japanese either for fun or to pass the Japanese Language Proficiency Test (JLPT), it is best to start from Kana.</p>
+
+		<h2 id="id-remember">Remember Kana is Fast and Easy</h2>
+
+		<p>There are about 102 symbols (46 monographs, 36 digraphs and 25 diacritics) in both hiragana and katakan. But the  good news is that you only need to remember monographs and rules about how diacritics and digraphs change the sound of the monograph. <b>So for both hiragana and katakana we need to memorize only about 100 symbols</b>.</p>
+
+		<p>The majority of people can remember kana in one day with enough effort and using the correct techniques. With little effort, about <b>one hour a day</b> (split into a few sessions), <b>hiragana or katakana may be learned in a week</b>.</p>
+
+		<p><b>There are a few techniques you can use to boost memorization</b> and you should choose those that  works best for you: For some this means memorizing the look of the kana symbols whilst others find it easier to remember a few words of text, associations, etc.</p>
+
+		<p>Some exercises that may help you to remember kana:</p>
+
+		<ul>
+			<li>try to <b>draw kana</b>. This will help you to remember, so you'll remember how the kana table and what each kana looks like</li>
+			<li><b>pronounce</b> kana sound when drawing it, <b>handwrite</b> kana/sound, it may boost memorization</li>
+			<li>try to find any <b>associations</b> between kana and something you know well, for example, kana う has something similar to Latin i</li>
+			<li>if you have difficulty finding associations by yourself, there are <a href="#id-mnemonics"><b>mnemonics</b></a> made by others, try them and try to remember the mnemonic image and mnemonic text</li>
+			<li>learn kana in small blocks of about <b>5-10 symbols</b> each</li>
 		</ul>
 
-		<h2>Download</h2>
-		<div class="pure-g">
-			<div class="pure-u-1-2">
-				<h3>iPhone app</h3>
-				<img src="/appstore.png" height="40pt" class="appstore" />
-				<p>Under review ...</p>
-			</div>
-			<div class="pure-u-1-2">
-				<h3>Web version</h3>
-				<ul>
-					<li><a href="https://nanvel.github.io/kanalearn/" target="_blank">Flash cards</a></li>
-					<li><a href="http://nanvel.name/pages/languages/japanese/hiragana-mnemonics" target="_blank">Hiragana mnemonics</a></li>
-					<li><a href="http://nanvel.name/pages/languages/japanese/katakana-mnemonics">Katakana mnemonics</a></li>
-				</ul>
-			</div>
-		</div>
+		<h2 id="id-mnemonics">Mnemonics and other tips</h2>
 
-		<h2>Social</h2>
+		<p><b>Mnemonics</b> refers to any system or device designed to aid memory–usually, patterns of letters, ideas, or associations, such as ROYGBIV to remember the colors of the rainbow.</p>
 
-		Facebook G+
+		<p>For example, this mnemonic image is for は:</p>
 
-		<h2>Feedback / Report a bug</h2>
+		<img src="ha.svg" />
 
-		<div class="email">
-			<a href="mailto:feedback@kana.nanvel.com?Subject=Kana%20feedback" target="_top" />feedback@kana.nanvel.com</a> or use this form:
-		</div>
+		<p>The mnemonic text is: "I live in a house."</p>
 
-		<form class="pure-form pure-form-aligned feedback-form" action="/api/feedback" method="POST" id="feedback-form">
-    		<fieldset>
-        		<div class="pure-control-group">
-            		<label for="name">Name</label>
-            		<input id="name" type="text" placeholder="Name" required>
-        		</div>
-        		<div class="pure-control-group">
-            		<label for="email">Email</label>
-            		<input id="email" type="email" placeholder="Email (optional)">
-        		</div>
+		<p>Some mnemonics can be connected:</p>
 
-        		<div class="pure-control-group">
-            		<label for="message">Message</label>
-            		<textarea id="message" class="pure-input-1-2" placeholder="Message" required></textarea>
-        		</div>
+		<img src="ho.svg" />
 
-				<div class="pure-control-group" id="recaptcha-container"></div>
+		<p>ほ - "A house becomes a home with a satellite."</p>
 
-        		<button type="submit" class="pure-button pure-button-primary" id="submit-button">Send</button> <div id="status" class="status"></div>
-    		</fieldset>
-		</form>
+		There are <a href="http://nanvel.name/pages/languages/japanese/hiragana-mnemonics" target="_blank"><b>hiragana mnemonics</b></a> and <a href="http://nanvel.name/pages/languages/japanese/katakana-mnemonics"><b>katakana mnemonics</b></a>.
 
-	</div>
+		<p>Some kana symbols are similar, like katakana カ (ka) which is similar to hiragana か (ka). Some kana looks similar to Latin or Cyrillic symbols, for example: ゆ (yu) looks like Cyrillic: ю.</p>
 
-	<div class="pure-u-1 pure-u-md-2-5">
+		<h2 id="id-consolidate">Consolidate your knowledge</h2>
 
-		<div class="screenshot">
-			<img src="/kana_main.png" />
-		</div>
+		<p>With techniques described above you can memorize kana quickly, but at the same time it is easy to forget everything you've learnt. When we learn new things they are stored in the short term memory first, and if the brain considers the information as useless or irrelevant, it erases it. In order to save kana into our long term memory, we need to use the information - <b>practice</b>.</p>
 
-		<div class="screenshot">
-			<img src="/kana_learn.png" />
-		</div>
+		<p>According to the <b>forgetting curve</b>, you will lose ~50% newly remembered information within one hour and in 2 days only ~30% will remain. This is where spaced repetition systems can help. If you want to remember something long term such as vocabulary in a foreign language or facts you need for your profession, the most efficient way to learn that material is <a href="https://en.wikipedia.org/wiki/Spaced_repetition" target="_blank"><b>spaced repetition</b></a>.</p>
 
-		<div class="screenshot">
-			<img src="/kana_details.png" />
-		</div>
+		<h2 id="id-app">Japanese kana iOS app</h2>
+
+		<p>The Japanese kana app provides <b>all you need to learn kana, in your mobile phone</b>. It includes both <b>hiragana and katakana tables</b> with each kana containing <b>sound, strokes, mnemonics and tips</b> and a <b>flash cards game</b>.</p>
+
+		<p>There are two ways you can learn kana using the app: the kana table and the flash cards game, with kana details easily accessed from both.</p>
+
+		<p>The app <b>tracks your progress</b> overall and for each individual kana symbol. Kana symbols that need your attention are colored in red or yellow and those you have already memorized are colored in green.</p>
+
+		<p>The <b>flash cards game algorithm</b> is optimized for exactly one purpose - helping you to memorize kana. There is a question with 4 answer options. You must select the correct answer or tap on the question for help. Once you made a wrong choice there is a details page available for the kana where you can revize the correct sound, mnemonic and tips.</p>
+
+		<p>There are 4 <b>question sets</b>:</p>
+
+		<ul>
+			<li>hiragana / sound and sound / hiragana</li>
+			<li>katakana / sound and sound / katakana</li>
+			<li>hiragana word / translation</li>
+			<li>katakana word / translation</li>
+		</ul>
+
+		<p>You can choose which sets you want to study. The app follows the common practice which is to study hiragana first and katakana next, however you can change this in settings if you so choose.</p>
+
+		There is a <a href="https://nanvel.github.io/kanalearn/" target="_blank">web version of flash cards</a> available.
+
+		<p>Your <b>feedback</b>, ideas for improvement and/or any bug reports are highly appreciated, please use <a href="#id-form">form below</a> or email <a href="mailto:feedback@kana.nanvel.com?Subject=Kana%20feedback" target="_top">feedback@kana.nanvel.com</a>.</p>
 
 	</div>
+	<div class="app-container">
 
+		<h2>Japanese kana iOS app</h2>
+
+		<div class="screenshot">
+			<img src="kana_main.png" />
+		</div>
+
+		<div class="download">
+			<img src="appstore.png" class="pure-img app-store" />
+			<img src="safari-pinned-tab.svg" class="pure-img app-icon" />
+			<ul>
+				<li>Learn hiragana and katakana using <b>flash cards game</b></li>
+				<li><b>Mnemonics, strokes and tips</b> are included</li>
+				<li>Learn some japanese words written in kana</li>
+				<li>It works offline</li>
+				<li>It is <b>light</b> (installation package is about 2MB)</li>
+			</ul>
+		</div>
+
+	</div>
 </div>
 
-<div class="copy">
-	&copy;  2016-<span class="year"></span>, Oleksandr Polieno
+<div class="feedback-container" id="id-form">
+	<h2>Feedback / Report a bug</h2>
+
+	<form class="pure-form pure-form-aligned feedback-form" action="/api/feedback" method="POST" id="feedback-form">
+		<fieldset>
+    		<div class="pure-control-group">
+        		<label for="name">Name</label>
+        		<input id="name" type="text" placeholder="Name" required>
+    		</div>
+    		<div class="pure-control-group">
+        		<label for="email">Email</label>
+        		<input id="email" type="email" placeholder="Email (optional)">
+    		</div>
+
+    		<div class="pure-control-group">
+        		<label for="message">Message</label>
+        		<textarea id="message" class="pure-input-1-2" placeholder="Message" required></textarea>
+    		</div>
+
+			<div class="pure-control-group" id="recaptcha-container"></div>
+
+    		<button type="submit" class="pure-button pure-button-primary" id="submit-button" style="background-color: #517C9C;">Send</button> <div id="status" class="status"></div>
+		</fieldset>
+	</form>
 </div>
+
+<footer>&copy;  2016-<span class="year"></span>, Oleksandr Polieno</footer>
 
 <script type="text/javascript" src="/app.min.js"></script>
 
