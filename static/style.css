@@ -1,0 +1,106 @@
+body {
+	background-color: #EAF0B8;
+	line-height: 140%;
+	text-align: justify;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+h1, h2 {
+	line-height: 120%;
+}
+.main-container {
+	margin-right: 0;
+}
+.app-container {
+	background-color: #D8E7A6;
+	padding: 2em;
+	text-align: left;
+	position: static;
+	width: none;
+}
+.app-container h2 {
+	text-align: center;
+}
+.appstore {
+	margin: 2em auto;
+}
+.feedback-container {
+	padding: 2em;
+	background-color: #D8E7A6;
+	margin-top: 4em;
+}
+.header {
+	padding: 2em 1em 0 1em;
+	line-height: 220%;
+}
+.subheader {
+	display: block;
+	font-size: 60%;
+	font-weight: normal;
+	line-height: 120%;
+	margin-top: 0.5em;
+}
+.article {
+	max-width: 40em;
+	margin: 2em auto 0 auto;
+	padding: 1em;
+}
+nav {
+	max-width: 40em;
+	margin: 4em auto 0 auto;
+	padding: 1em;
+}
+footer {
+	margin-top: 2em;
+	padding: 1em 2em;
+}
+.screenshot {
+	text-align: center;
+}
+.screenshot img {
+	width: 100%;
+}
+.download ul {
+	margin-top: 2em;
+}
+.download img.app-store {
+	height: 4em;
+	display: inline-block;
+}
+.download img.app-icon {
+	height: 3.9em;
+	display: inline-block;
+	border-radius: 0.5em;
+	background-color: #fff;
+	position: absolute;
+	right: 2em;
+}
+.status {
+	display: inline-block;
+	margin-left: 20pt;
+}
+a {
+	color: #7D849E;
+}
+.pure-button-primary {
+	background-color: #517C9C;
+}
+@media screen and (min-width: 48em) {
+	.app-container {
+		width: 20em;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.main-container {
+		margin-right: 25em;
+	}
+	.header {
+		padding: 2em 2em 0 2em;
+		line-height: 220%;
+	}
+}
+@media only screen and (max-device-width: 320px) {
+  .download img.app-icon { 
+    display: none;
+  }
+}

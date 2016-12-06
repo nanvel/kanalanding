@@ -8,116 +8,22 @@
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/base-min.css">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/forms-min.css">
 	<link rel="stylesheet" href="https://unpkg.com/purecss@0.6.0/build/buttons-min.css">
+	<link rel="stylesheet" href="/style.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png?v=1" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png?v=1" sizes="16x16" />
     <link rel="manifest" href="/manifest.json" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
 	<title>Learn Japanese kana</title>
 	<script type="text/javascript">
-		var RECATCHA_LOADED = false
-		var RECAPTCHA_SITE_KEY = "6Ldrhg0UAAAAAIq9qLRuEFJQeN0vRicIa3385jCF"
-  		var onRecaptchaLoad = function() {
-			RECATCHA_LOADED = true
+		window.RECATCHA_LOADED = false
+		window.RECAPTCHA_SITE_KEY = "6Ldrhg0UAAAAAIq9qLRuEFJQeN0vRicIa3385jCF"
+  		window.onRecaptchaLoad = function() {
+			window.RECATCHA_LOADED = true
   		}
 	</script>
 	<script src="https://www.google.com/recaptcha/api.js?onload=onRecaptchaLoad&render=explicit" async defer></script>
 </head>
-<style>
-	body {
-		background-color: #EAF0B8;
-		line-height: 140%;
-		text-align: justify;
-		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	}
-	h1, h2 {
-		line-height: 120%;
-	}
-	.app-container {
-		background-color: #D8E7A6;
-		padding: 2em;
-		text-align: left;
-	}
-	.app-container h2 {
-		text-align: center;
-	}
-	.appstore {
-		margin: 2em auto;
-	}
-	.feedback-container {
-		padding: 2em;
-		background-color: #D8E7A6;
-		margin-top: 4em;
-	}
-	.header {
-		padding: 2em 1em 0 1em;
-		line-height: 220%;
-	}
-	.subheader {
-		display: block;
-		font-size: 60%;
-		font-weight: normal;
-		line-height: 120%;
-		margin-top: 0.5em;
-	}
-	.article {
-		max-width: 40em;
-		margin: 2em auto 0 auto;
-		padding: 1em;
-	}
-	nav {
-		max-width: 40em;
-		margin: 4em auto 0 auto;
-		padding: 1em;
-	}
-	footer {
-		margin-top: 2em;
-		padding: 1em 2em;
-	}
-	.screenshot {
-		text-align: center;
-	}
-	.screenshot img {
-		width: 100%;
-	}
-	.download ul {
-		margin-top: 2em;
-	}
-	.download img.app-store {
-		height: 4em;
-		display: inline-block;
-	}
-	.download img.app-icon {
-		height: 3.9em;
-		display: inline-block;
-		border-radius: 0.5em;
-		background-color: #fff;
-		position: absolute;
-		right: 2em;
-	}
-	.status {
-		display: inline-block;
-		margin-left: 20pt;
-	}
-	a {
-		color: #7D849E;
-	}
-	@media screen and (min-width: 48em) {
-		.app-container {
-			width: 20em;
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
-		.main-container {
-			margin-right: 25em;
-		}
-		.header {
-			padding: 2em 2em 0 2em;
-			line-height: 220%;
-		}
-	}
-</style>
 <body>
 
 <div class="main-container">
@@ -139,7 +45,7 @@
 
 		<h2 id="id-remember">Remember Kana is Fast and Easy</h2>
 
-		<p>There are about 102 symbols (46 monographs, 36 digraphs and 25 diacritics) in both hiragana and katakan. But the  good news is that you only need to remember monographs and rules about how diacritics and digraphs change the sound of the monograph. <b>So for both hiragana and katakana we need to memorize only about 100 symbols</b>.</p>
+		<p>There are about 102 symbols (46 monographs, 36 digraphs and 25 diacritics) in both hiragana and katakan. But the  good news is that you only need to remember monographs and <a href="http://nanvel.name/pages/languages/japanese/hiragana#digraphs-and-diacritics" target="_blank">rules about how diacritics and digraphs change the sound of the monograph</a>. <b>So for both hiragana and katakana we need to memorize only about 100 symbols</b>.</p>
 
 		<p>The majority of people can remember kana in one day with enough effort and using the correct techniques. With little effort, about <b>one hour a day</b> (split into a few sessions), <b>hiragana or katakana may be learned in a week</b>.</p>
 
@@ -161,13 +67,13 @@
 
 		<p>For example, this mnemonic image is for は:</p>
 
-		<img src="ha.svg" />
+		<img src="/ha.svg" alt="は (ha) hiragana mnemonic" title="は mnemonic" />
 
 		<p>The mnemonic text is: "I live in a house."</p>
 
 		<p>Some mnemonics can be connected:</p>
 
-		<img src="ho.svg" />
+		<img src="/ho.svg" alt="ほ (ho) hiragana mnemonic" title="ほ mnemonic" />
 
 		<p>ほ - "A house becomes a home with a satellite."</p>
 
@@ -212,12 +118,13 @@
 		<h2>Japanese kana iOS app</h2>
 
 		<div class="screenshot">
-			<img src="kana_main.png" />
+			<img src="/kana_main.png" alt="Japanese kana app main view - kana table" title="Kana table page" />
 		</div>
 
 		<div class="download">
-			<img src="appstore.png" class="pure-img app-store" />
-			<img src="safari-pinned-tab.svg" class="pure-img app-icon" />
+			<img src="/appstore.png" class="pure-img app-store" alt="Download on the App Store" title="View Japanese kana app on the App Store" />
+			<img src="/app-icon.svg" class="pure-img app-icon" alt="Japanese kana app icon" title="Japanese kana app icon" />
+			<p>on review ...</p>
 			<ul>
 				<li>Learn hiragana and katakana using <b>flash cards game</b></li>
 				<li><b>Mnemonics, strokes and tips</b> are included</li>
@@ -251,7 +158,7 @@
 
 			<div class="pure-control-group" id="recaptcha-container"></div>
 
-    		<button type="submit" class="pure-button pure-button-primary" id="submit-button" style="background-color: #517C9C;">Send</button> <div id="status" class="status"></div>
+    		<button type="submit" class="pure-button pure-button-primary" id="submit-button">Send</button> <div id="status" class="status"></div>
 		</fieldset>
 	</form>
 </div>
