@@ -14,7 +14,7 @@ from aiohttp import web, ClientSession, errors
 RECAPTCHA_SITE_KEY = os.getenv('RECAPTCHA_SITE_KEY')
 RECAPTCHA_SECRET_KEY = os.getenv('RECAPTCHA_SECRET_KEY')
 SMTP_HOST = os.getenv('SMTP_HOST', 'localhost')
-SMTP_PORT = os.getenv('SMTP_POST', 1025)
+SMTP_PORT = os.getenv('SMTP_PORT', 1025)
 APP_EMAIL = os.getenv('APP_EMAIL')
 
 
