@@ -26,7 +26,7 @@ h1, h2 {
 .feedback-container {
 	padding: 2em;
 	background-color: #D8E7A6;
-	margin-top: 4em;
+	margin-top: 2em;
 }
 .header {
 	padding: 2em 1em 0 1em;
@@ -83,6 +83,9 @@ a {
 }
 .pure-button-primary {
 	background-color: #517C9C;
+}
+.social {
+	padding: 1em 0 2em 0;
 }
 .error-page {
     position: absolute;
