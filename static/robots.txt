@@ -1,0 +1,10 @@
+User-agent: Yandex
+Disallow: /api
+Host: kana.nanvel.com
+
+User-agent: Goolebot
+Disallow: /api
+
+User-agent: *
+Crawl-delay: 30
+Disallow: /api
