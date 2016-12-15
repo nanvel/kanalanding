@@ -60,7 +60,7 @@ async def feedback(request):
     else:
         sender = "noname@kana.nanvel.com"
 
-    message = "Subject: Kana app feedback\n\nname: {name}\nemail: {email}\nmessage: {message}".format(
+    message = "Subject: Kana app feedback from {name}\n\nname: {name}\nemail: {email}\nmessage: {message}".format(
         name=data['name'],
         email=data['email'],
         message=data['message']
