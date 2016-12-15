@@ -8,6 +8,8 @@ import ujson
 import os
 import re
 
+from functools import partial
+
 from aiohttp import web, ClientSession, errors
 
 
@@ -66,16 +68,21 @@ async def feedback(request):
         message=data['message']
     )
 
-    await request.app['smtp'].sendmail(sender, [APP_EMAIL], message)
+
+    send_message = partial(request.app['smtp'].sendmail, sender, [APP_EMAIL], message)
+    try:
+        await send_message()
+    except aiosmtplib.errors.SMTPServerDisconnected:
+        await request.app['smtp'].connect()
+        await send_message()
+
     return web.Response(text="Ok", content_type='text/plain')
 
 
 app = web.Application()
 
 loop = asyncio.get_event_loop()
-smtp = aiosmtplib.SMTP(hostname=SMTP_HOST, port=SMTP_PORT, loop=loop)
-loop.run_until_complete(smtp.connect())
-app['smtp'] = smtp
+app['smtp'] = aiosmtplib.SMTP(hostname=SMTP_HOST, port=SMTP_PORT, loop=loop)
 
 # python -m smtpd -n -c DebuggingServer localhost:1025
 
