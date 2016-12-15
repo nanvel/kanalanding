@@ -66,15 +66,16 @@ async def feedback(request):
         message=data['message']
     )
 
-    await request.app.smtp.sendmail(sender, [APP_EMAIL], message)
+    await request.app['smtp'].sendmail(sender, [APP_EMAIL], message)
     return web.Response(text="Ok", content_type='text/plain')
 
 
 app = web.Application()
 
 loop = asyncio.get_event_loop()
-app.smtp = aiosmtplib.SMTP(hostname=SMTP_HOST, port=SMTP_PORT, loop=loop)
-loop.run_until_complete(app.smtp.connect())
+smtp = aiosmtplib.SMTP(hostname=SMTP_HOST, port=SMTP_PORT, loop=loop)
+loop.run_until_complete(smtp.connect())
+app['smtp'] = smtp
 
 # python -m smtpd -n -c DebuggingServer localhost:1025
 
